@@ -1,0 +1,397 @@
+/*BORRAR MARGENES DE TODOS ELEMENTOS*/
+*{
+    margin: 0;
+}
+
+    /*CONTENIDO DE LA PAGINA*/
+body{   
+    background-color: #cee9f8;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+
+}
+
+    /*PARA QUE LOS LINKS APAREZCAN COMO TEXTO COMUN*/
+a{  
+    text-decoration: none;
+    color: black;
+}
+
+    /*ENCABEZADO DE LA PAGINA*/
+.top-of-page{
+    background-color: #8ecdf7;
+    display: grid;
+    grid-template-areas: 
+    "logo-button logo-button blank top-more-button top-contact-button top-log-button";  /*DELIMITA ESPACIOS DEL ENCABEZADO PARA CADA CAJA*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+    /*CAJAS DEL ENCABEZADO*/
+.logo-button{
+    display: inline-flex;
+    position: relative;
+    grid-area: logo-button;
+    font-family: 'Delius', cursive;
+    font-size: 40px;
+    align-content: center;
+    margin: 5px 5px 5px 30px;
+}
+
+.top-contact-button{
+    grid-area: top-contact-button;
+}
+
+.top-more-button{
+    grid-area: top-more-button;
+}
+
+.top-log-button{
+    grid-area: top-log-button;
+}
+
+
+/*ESTILO PARA EL LOGO*/
+
+.logo-button span{
+position: relative;
+text-align: center;
+top: -20px;
+}
+
+
+.top-img{
+    height: 70px;
+    margin-left: 0px;
+    top: 10px;
+    justify-self: center;
+    pointer-events: none;
+}
+
+.logo-button a{
+    text-decoration: none;
+    color: #1C2833;
+}
+
+
+    /*ESTILO PARA TODOS LOS BOTONES DE ENCABEZADO*/
+.button{
+    display: flex;
+    margin: 5px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+
+}
+
+.top-button-img{
+    width: 20px;
+    margin-left: 6px;
+    border-color: #8ecdf7;
+    border-style: double;
+    pointer-events: none;
+    
+}
+        /*INTERACCIONES Y ANIMACIONES*/
+.top-button-link:hover{
+    border-style: double;
+    border-color:#8ecdf7;
+    border-bottom-color: cornflowerblue;
+    border-width: 10px;
+    transition: border-bottom 200ms ease-out;
+}
+
+.top-button-link:focus{
+    border-style: double;
+    border-color:#8ecdf7;
+    border-bottom-color: cornflowerblue;
+    border-width: 10px;
+    transition: border-bottom 200ms ease-out;
+}
+
+/*CONTENIDO DE LA PÁGINA*/
+.page-grid{
+    width: auto;
+    margin: 30px;
+    padding: 10px;
+    background-color: #b7def8;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "header header header header more"
+    "article-1 article-1  article-2 article-2 more"
+    "article-3 article-3 article-4 article-4 more"
+    
+}
+
+.page-header{
+    grid-area: header;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    justify-self: center;
+    margin: 5px;
+}
+
+.page-article{
+    width: 400px;
+    height: 380px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10;
+}
+
+.page-article img{
+    margin-top: 40px;
+    width: 175px;
+    height: 175px;
+    justify-self: center;
+    align-self: center;
+    pointer-events: none;    
+}
+
+/*INTERACCIONES Y ANIMACIONES*/
+
+.page-article:hover{
+    opacity: 0.7;
+    transition: opacity 300ms;
+    border-radius: 100px;
+    transition: border-radius 300ms;
+}   
+
+.page-article a:focus{
+    opacity: 0.7;
+    transition: opacity 300ms;
+}   
+
+/*PARA DAR ESTILO Y FORMA A LOS LINKS DE CADA ARTÍCULO*/
+.page-article a{
+    width: 480px;
+    height: 500px;
+    padding-top: 30px;
+}
+
+.page-article-1 {
+    grid-area: article-1;
+    background-color: rgb(150, 206, 216);
+    width: auto;
+}
+
+.page-article-2 {
+    width: auto;
+    grid-area: article-2;
+    background-color: rgb(232, 248, 252);
+    }
+
+.page-article-3 {
+    width: auto;
+    grid-area: article-3;
+    background-color:  rgb(232, 248, 252);
+}
+
+.page-article-4 {
+    width: auto;
+    grid-area: article-4;
+    background-color: rgb(150, 206, 216);
+    }
+
+    /*BOTON A MÁS ARTÍCULOS*/
+.page-more-link{
+    align-self: flex-start;
+    grid-area: more;
+    background-color: rgb(29, 150, 180);
+    height: 860px;
+    margin: 5px;
+}
+
+.page-more{
+    display: grid;
+    grid-template-areas: 
+    "top"
+    "mid"
+    "bottom";
+    background-color: rgb(29, 150, 180);
+    height: 800px;
+    margin: 5px;
+    align-content: center;
+}
+
+        /*CONTENIDO DEL BOTON A MAS ARTICULOS*/
+.page-more img {
+    width: 140px; 
+    margin: 50px;  
+}   
+
+.more-img-1 {
+    grid-area: top;
+    pointer-events: none;
+}
+
+.more-text{
+    grid-area: mid;
+    justify-self: center;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.more-img-2 {
+    grid-area: bottom;
+    pointer-events: none;
+}
+
+        /*INTERACCIONES Y ANIMACIONES*/
+.page-more:hover{
+    opacity: 0.7;
+    transition: opacity 300ms;
+}
+
+.page-more-link:focus{
+    opacity: 0.7;
+    transition: opacity 300ms;
+}
+
+
+/*TODO LO DEL FOOTER BASE*/
+.page-footer{
+    background-color: #8ecdf7;
+    display: grid;
+    grid-template-areas: 
+    "contact-form copyright social-media";
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.footer-box{
+    display: flex;
+    width: 350px;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    margin: 25px 0 25px 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+}
+
+    /*AREA DE CONTACTO*/
+.contact-form{
+    grid-area: contact-form;
+    position: relative;
+    width: 300px;
+}
+    
+.contact-area div{
+    margin-bottom: 10px;
+}
+    
+.contact-area label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    
+.contact-text{
+    margin-bottom: 50px;
+}
+
+        /*BOTON DE CONTACTO*/
+.bottom-button{     
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+            /*INTERACCIONES*/
+.bottom-button:focus{
+    opacity: 0.8;
+}
+
+.bottom-button:hover{
+    border-style: ridge;
+}
+
+    /*AREA COPYRIGHT*/
+.copyright {
+    grid-area: copyright;
+    align-self: flex-end;
+}
+
+.footer-map{
+    width: 100%;
+    margin: 10px 0 0 0; 
+    background-color: cornflowerblue;
+    padding: 10px 0 5px 0;
+    border-radius: 10px;        
+}
+
+    /*AREA SOCIAL*/
+.social-media{
+    grid-area: social-media;
+}
+
+.social-media span{
+    width: 220px;
+    margin: 0 50px 0px 5px;
+}
+
+.social-media a{
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+}
+
+.social-media img{
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+}
+
+.social-media img:hover{
+    width: 60px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+.social-media a:focus{
+    width: 60px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+
+/*PAGINA DEL ARTÍCULO DE MUESTRA*/
+
+.no-article {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 25px;
+    padding: 25px;
+    background-color: rgb(232, 248, 252);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.no-article-title{
+    font-size: 40px;
+    margin: 20px 20px 30px 20px;
+
+}
+
+.no-article-text{
+    font-size: 25px;
+    margin: 25px 25px 50px 25px;
+    text-align: justify;
+}
