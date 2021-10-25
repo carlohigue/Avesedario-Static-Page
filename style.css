@@ -352,7 +352,7 @@ top: -20px;
     pointer-events: none;
 }
 
-.social-media img:hover{
+.social-media svg:hover{
     width: 60px;
     background-color: cornflowerblue;
     border-radius: 10px;
@@ -912,7 +912,7 @@ textarea{
         width: 360px;
     }
 
-    .page-article img{
+    .page-article svg{
         width:  100px;
         height: 100px;
     }
@@ -963,7 +963,7 @@ textarea{
         text-align: center;
     }
 
-    .page-more-link img{
+    .page-more-link svg{
         width: 35px;
         position: relative;
         top: 60px;
@@ -1048,7 +1048,7 @@ textarea{
         margin: 8px;
     }
     
-    .social-media img{
+    .social-media svg{
         width: 20px;
         height: 20px;
         pointer-events: none;
@@ -1491,7 +1491,7 @@ svg{
         width: 360px;
     }
 
-    .page-article img{
+    .page-article svg{
         width:  100px;
         height: 100px;
     }
@@ -1540,7 +1540,7 @@ svg{
         margin-top: 4px;
     }
 
-    .page-more-link img{
+    .page-more-link svg{
         width: 25px;
     }
 
@@ -1613,7 +1613,7 @@ svg{
         margin: 8px;
     }
     
-    .social-media img{
+    .social-media svg{
         width: 20px;
         height: 20px;
         pointer-events: none;
@@ -2053,7 +2053,7 @@ svg{
         padding: 0;
     }
 
-    .page-article img{
+    .page-article svg{
         width:  100px;
         height: 100px;
     }
@@ -2102,7 +2102,7 @@ svg{
         margin-top: 4px;
     }
 
-    .page-more-link img{
+    .page-more-link svg{
         width: 25px;
     }
 
@@ -2189,7 +2189,7 @@ svg{
         margin: 8px;
     }
     
-    .social-media img{
+    .social-media svg{
         width: 15px;
         height: 15px;
         pointer-events: none;
@@ -2225,7 +2225,7 @@ svg{
         width: 300px;
     }
     
-    .no-article-img img{
+    .no-article-img svg{
         max-width: 130px;
         max-height: 100px;
     }
