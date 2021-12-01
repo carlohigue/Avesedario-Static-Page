@@ -392,6 +392,7 @@ top: -20px;
     margin: 25px 25px 50px 25px;
     text-align: justify;
 }
+
  /*PAGINA DEL LOGIN*/
 
  /*CUADRO CON CONTENIDOS DE LA PAGINA*/
@@ -800,7 +801,7 @@ textarea{
     width: 400px;
 }
 
-.no-article-img img{
+.card-img-container img{
     max-width: 400px;
     max-height: 400px;
 }
@@ -822,6 +823,16 @@ textarea{
 
 
 @media (min-width: 481px) and (max-width: 769px) {
+    .card-img-container{
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .begoneIfSmall{
+        display: none;
+    }
 
     .top-of-page{
         width: 768px;
@@ -1404,6 +1415,16 @@ svg{
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
+    .card-img-container{
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .begoneIfSmall{
+        display: none;
+    }
 
     .top-of-page{
         width: 480px;
@@ -1963,6 +1984,9 @@ svg{
 }  
 
 @media (max-width: 320px) {
+    .begoneIfSmall{
+        display: none;
+    }
 
     .top-of-page{
         width: 320px;
@@ -2209,7 +2233,7 @@ svg{
     .no-article-title{
         grid-area: no-article-title;
         background-color: rgb(196, 231, 238);
-        text-align: center;
+        text-align: left;
         padding: 5px;
         margin: 5px 5px 0 5px;
         font-family: 'Bebas Neue', cursive;
@@ -2217,6 +2241,7 @@ svg{
         width: 290px;
     }
     
+
     .no-article-img{
         grid-area: no-article-img;
         display: flex;
